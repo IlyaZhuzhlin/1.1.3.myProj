@@ -14,7 +14,12 @@ public class Main {
         util.getConnection();
         UserDaoJDBCImpl userDaoJDBC = new UserDaoJDBCImpl();
         userDaoJDBC.createUsersTable();
-
-
+        userDaoJDBC.saveUser("Dmitry", "Voroncov", (byte) 40);
+        userDaoJDBC.saveUser("Igor", "Petrov", (byte) 30);
+        userDaoJDBC.saveUser("Vitaliy", "Kycheraviy", (byte) 50);
+        userDaoJDBC.saveUser("Boris", "Britva", (byte) 55);
+        userDaoJDBC.getAllUsers();
+        userDaoJDBC.cleanUsersTable();
+        userDaoJDBC.dropUsersTable();
     }
 }
