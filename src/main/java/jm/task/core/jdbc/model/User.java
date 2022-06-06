@@ -1,5 +1,7 @@
 package jm.task.core.jdbc.model;
 
+import jm.task.core.jdbc.service.UserService;
+
 import javax.persistence.Column;
 import javax.persistence.Id;
 import javax.persistence.Table;
